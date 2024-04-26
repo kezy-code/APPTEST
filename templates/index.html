@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Case - Boîtiers de PC pour Gamers Modernes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Open Case - Boîtiers de PC pour Gamers Modernes</h1>
+        <a class="sign_in" href="{{ url_for('form')}}">Sign in</a>
+<a href="javascript:history.go(-1)">Back</a>
+    </header>
+    <div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="static/img/coffre.jpeg" class="d-block w-100" alt="Coffre Commun">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Coffre Commun</h5>
+                    <p>Contient des boîtiers de PC de qualité standard.</p>
+                    <p>Prix: $9.99</p>
+                    <a href="{{ url_for('open_box_commun')}}">Ouvrir</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="static/img/coffre.jpeg" class="d-block w-100" alt="Coffre Rare">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Coffre Rare</h5>
+                    <p>Contient des boîtiers de PC de qualité supérieure.</p>
+                    <p>Prix: $19.99</p>
+                    <a href="{{ url_for('open_box_rare')}}">Ouvrir</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="static/img/coffre.jpeg" class="d-block w-100" alt="Coffre Épique">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Coffre Épique</h5>
+                    <p>Contient des boîtiers de PC de qualité exceptionnelle.</p>
+                    <p>Prix: $29.99</p>
+                    <a href="{{ url_for('open_box_epic')}}">Ouvrir</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="static/img/coffre.jpeg" class="d-block w-100" alt="Coffre Légendaire">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Coffre Légendaire</h5>
+                    <p>Contient des boîtiers de PC de qualité légendaire.</p>
+                    <p>Prix: $49.99</p>
+                    <a href="{{ url_for('open_box_legendary')}}">Ouvrir</a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+
+    <footer>
+        <p>&copy; 2024 Open Case - Tous droits réservés</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function openChest() {
+            alert("Coffre ouvert !");
+            // Ajoutez ici le code pour effectuer l'ouverture du coffre
+        }
+    </script>
+</body>
+</html>
